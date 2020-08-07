@@ -1,0 +1,23 @@
+import _ from "lodash"
+
+export const STORY_TYPE_PHOTO = "PHOTO"
+export const STORY_TYPE_VIDEO = "VIDEO"
+
+export const STORY_TYPE = {
+  STORY_TYPE_PHOTO,
+  STORY_TYPE_VIDEO
+}
+
+export const STORY_TYPE_LIST = _.values(STORY_TYPE)
+
+export const STORY_STATUS_CREATED = "CREATED"
+export const STORY_STATUS_PUBLISHED = "PUBLISHED"
+export const STORY_STATUS_BLOCKED = "BLOCKED"
+
+export const STORY_STATUS = {
+  STORY_STATUS_CREATED,
+  STORY_STATUS_PUBLISHED,
+  STORY_STATUS_BLOCKED
+}
+
+export const STORY_STATUS_LIST = _.values(STORY_STATUS)

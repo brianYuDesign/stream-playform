@@ -1,0 +1,19 @@
+query {
+  chatrooms {
+    chatrooms {
+      id
+      unreadCount
+      lastMessage {
+        id
+        isRead
+        sender {
+          id
+        }
+        content
+        chatroom {
+          id
+        }
+      }
+    }
+  }
+}

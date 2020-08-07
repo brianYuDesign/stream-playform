@@ -1,0 +1,8 @@
+mutation {
+  createChatmessage(
+    input: { chatroom: "5de1ebd8c5cf83bc5a3b0645", content: "1111", type: TEXT }
+  ) {
+    id
+    content
+  }
+}

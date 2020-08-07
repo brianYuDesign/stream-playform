@@ -1,0 +1,13 @@
+import _ from "lodash"
+
+export const INVOICE_STATUS_CREATED = "CREATED"
+export const INVOICE_STATUS_SUCCESS = "SUCCESS"
+export const INVOICE_STATUS_FAIL = "FAIL"
+
+export const INVOICE_STATUS = {
+  INVOICE_STATUS_CREATED,
+  INVOICE_STATUS_SUCCESS,
+  INVOICE_STATUS_FAIL
+}
+
+export const INVOICE_STATUS_LIST = _.values(INVOICE_STATUS)

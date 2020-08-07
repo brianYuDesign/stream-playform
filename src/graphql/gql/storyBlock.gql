@@ -1,0 +1,6 @@
+query {
+  storyBlocks {
+    id
+    name
+  }
+}

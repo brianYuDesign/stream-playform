@@ -1,0 +1,16 @@
+mutation {
+  createOrder(input: { coin: "5e0b3a73b18f25c26265cb33" }) {
+    id
+    orderNumber
+    aes
+    sha
+  }
+}
+
+query {
+  order(id: "5e0d8a853643e4faba31b28a") {
+    orderNumber
+    tradeNumber
+    status
+  }
+}

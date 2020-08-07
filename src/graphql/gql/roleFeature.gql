@@ -1,0 +1,6 @@
+query {
+  roleFeatures {
+    id
+    name
+  }
+}

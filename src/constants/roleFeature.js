@@ -1,0 +1,5 @@
+export const ADMIN = "ADMIN"
+export const MANAGER = "MANAGER"
+export const DEALER = "DEALER"
+export const CLIENT = "CLIENT"
+export const ARTIST = "ARTIST"

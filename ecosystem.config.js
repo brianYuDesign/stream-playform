@@ -1,0 +1,101 @@
+module.exports = {
+  apps: [
+    {
+      name: "DEV-BACKEND",
+      script: "server.js",
+      watch: true,
+      ignore_watch: ["node_modules", "logs"],
+      watch_options: { followSymlinks: false },
+      exec_mode: "cluster",
+      error_file: "./logs/pm2.error.log",
+      out_file: "./logs/pm2.app.log",
+      env: {
+        NODE_ENV: "DEV",
+        JWT_SECRET: "kgcm_dev",
+        BUCKET_NAME: "kgcm-dev",
+        HOST: "18.178.164.172",
+        PORT: 9999,
+        DB_HOST: "mongodb://4idps:Foritech53117492@18.178.164.172:47017/KGCM",
+        REDIS_HOST: "18.178.164.172",
+        REDIS_PORT: "8379",
+        FRONTEND_HOST: "http://dev.appbanana.life:7575",
+        BACKOFFICE_HOST: "http://dev.appbanana.life:8000",
+        EZPAY_RETURNURL: "http://dev.appbanana.life:9999/order/return",
+        FACEBOOK_CLIENT_ID: "2274515626193040",
+        FACEBOOK_CLIENT_SECRET: "f19f50a40dea17d5b2a39c34b2bb3931",
+        GOOGLE_CLIENT_ID:
+          "612908112356-5ke2nrsoog62cfi40nfmvoaf2mkm88ns.apps.googleusercontent.com",
+        GOOGLE_CLIENT_SECRET: "WlpS4g6b2knINbH--Pfp_Dgz",
+        EZPAY_MERCHANTID: "MS38797242",
+        EZPAY_VERSION: "1.5",
+        EZPAY_KEY: "meLoOndAMWh2YqHMY2fIqCktcC2sa7PY",
+        EZPAY_IV: "CmrauQW2yq4zLncP",
+        EZPAY_INVOICE_MERCHANTID: "32091702",
+        EZPAY_INVOICE_API_ENDPOINT:
+          "https://cinv.ezpay.com.tw/Api/invoice_issue",
+        EZPAY_INVOICE_VERSION: "1.4",
+        EZPAY_INVOICE_KEY: "L3gldzom9imEyfT1ufT7m7YjPKdKhV82",
+        EZPAY_INVOICE_IV: "C3qJVgxAkvrsnAZP",
+        CDN: "http://video-dev.appbanana.life/"
+      },
+      env_staging: {
+        NODE_ENV: "STAGING",
+        JWT_SECRET: "kgcm_staging",
+        BUCKET_NAME: "kgcm-staging",
+        HOST: "18.178.164.172",
+        PORT: 4000,
+        DB_HOST: "mongodb://4idps:Foritech53117492@18.178.164.172:4600/KGCM",
+        REDIS_HOST: "18.178.164.172",
+        REDIS_PORT: "6600",
+        FRONTEND_HOST: "http://staging.appbanana.life:3000",
+        BACKOFFICE_HOST: "http://staging.appbanana.life:5000",
+        EZPAY_RETURNURL: "http://staging.appbanana.life:4000/order/return",
+        FACEBOOK_CLIENT_ID: "2274515626193040",
+        FACEBOOK_CLIENT_SECRET: "f19f50a40dea17d5b2a39c34b2bb3931",
+        GOOGLE_CLIENT_ID:
+          "612908112356-36j0iag8tiiim4ba6dd8queu04hij7hr.apps.googleusercontent.com",
+        GOOGLE_CLIENT_SECRET: "Tf3AenmC8lY-Jph8TAS7eIHc",
+        EZPAY_MERCHANTID: "MS38797242",
+        EZPAY_VERSION: "1.5",
+        EZPAY_KEY: "meLoOndAMWh2YqHMY2fIqCktcC2sa7PY",
+        EZPAY_IV: "CmrauQW2yq4zLncP",
+        EZPAY_INVOICE_MERCHANTID: "32091702",
+        EZPAY_INVOICE_API_ENDPOINT:
+          "https://cinv.ezpay.com.tw/Api/invoice_issue",
+        EZPAY_INVOICE_VERSION: "1.4",
+        EZPAY_INVOICE_KEY: "L3gldzom9imEyfT1ufT7m7YjPKdKhV82",
+        EZPAY_INVOICE_IV: "C3qJVgxAkvrsnAZP",
+        CDN: "http://video-staging.appbanana.life/"
+      },
+      env_production: {
+        NODE_ENV: "PROD",
+        JWT_SECRET: "kgcm_prod",
+        BUCKET_NAME: "kgcm-prod",
+        HOST: "3.112.245.229",
+        PORT: 4000,
+        DB_HOST: "mongodb://4idps:Foritech53117492@3.112.245.229:9600/KGCM",
+        REDIS_HOST: "3.112.245.229",
+        REDIS_PORT: "9379",
+        FRONTEND_HOST: "https://web.appbanana.life",
+        BACKOFFICE_HOST: "https://admin.appbanana.life",
+        EZPAY_RETURNURL: "https://graphql.appbanana.life/order/return",
+        FACEBOOK_CLIENT_ID: "2274515626193040",
+        FACEBOOK_CLIENT_SECRET: "f19f50a40dea17d5b2a39c34b2bb3931",
+        GOOGLE_CLIENT_ID:
+          "612908112356-v2fke7f7kpmvl0caooclgmnas7rr4a19.apps.googleusercontent.com",
+        GOOGLE_CLIENT_SECRET: "2EulmumqA5XUYVxRqyAIJHNh",
+        EZPAY_MERCHANTID: "MS38797242",
+        EZPAY_VERSION: "1.5",
+        EZPAY_KEY: "meLoOndAMWh2YqHMY2fIqCktcC2sa7PY",
+        EZPAY_IV: "CmrauQW2yq4zLncP",
+        EZPAY_INVOICE_MERCHANTID: "32091702",
+        EZPAY_INVOICE_API_ENDPOINT:
+          "https://cinv.ezpay.com.tw/Api/invoice_issue",
+        EZPAY_INVOICE_VERSION: "1.4",
+        EZPAY_INVOICE_KEY: "L3gldzom9imEyfT1ufT7m7YjPKdKhV82",
+        EZPAY_INVOICE_IV: "C3qJVgxAkvrsnAZP",
+        CDN: "https://video-prod.appbanana.life/"
+      }
+    }
+  ]
+}

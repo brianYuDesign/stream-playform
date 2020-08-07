@@ -1,0 +1,9 @@
+mutation {
+  createFeature(
+    input: { name: "經銷商管理", featureCode: "dealerManagement" }
+  ) {
+    id
+    name
+    featureCode
+  }
+}

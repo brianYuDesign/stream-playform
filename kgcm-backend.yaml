@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kgcm-backend
+  labels:
+    app: appserver
+spec:
+  containers:
+    - name: pod-kgcm
+      image: brian831121/kgcm-backend:1.0.0
+      ports:
+        - containerPort: 4000

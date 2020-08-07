@@ -1,0 +1,27 @@
+query {
+  stories {
+    endTime
+    content
+    thumbnailUrl
+    resourceUrl
+    storyTags {
+      id
+      name
+    }
+    storyBlock {
+      id
+      name
+      enName
+    }
+  }
+}
+
+query {
+  storyBlockStories(storyBlock: "5de5e06429daf139eeb7ddcd") {
+    hasMore
+    stories {
+      id
+      content
+    }
+  }
+}

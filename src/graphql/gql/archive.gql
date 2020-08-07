@@ -1,0 +1,8 @@
+query {
+  archive(artist: "5de716911620bd0509a8f862") {
+    stories {
+      id
+      content
+    }
+  }
+}

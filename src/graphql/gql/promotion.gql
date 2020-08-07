@@ -1,0 +1,14 @@
+mutation {
+  createPromotion(
+    input: {
+      title: "1111"
+      content: "1111"
+      lang: TW
+      reward: "5ddfdab5296db638fc93f2a2"
+      startTime: "2019-12-28T14:06:13.694Z"
+      endTime: "2019-12-28T14:06:13.694Z"
+    }
+  ) {
+    id
+  }
+}

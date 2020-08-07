@@ -1,0 +1,17 @@
+mutation {
+  createDealer(
+    input: {
+      ban: "12345678"
+      name: "經銷商A"
+      owner: "DealerA_Owner"
+      email: "dealera@dealer.com"
+      address: "DealerA地址"
+      phoneNumber: "0912345678"
+      profitPercentSetting: 30
+      contractUrl: "https://tw.yahoo.com/"
+    }
+  ) {
+    id
+    name
+  }
+}

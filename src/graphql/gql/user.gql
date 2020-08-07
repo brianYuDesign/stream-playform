@@ -1,0 +1,70 @@
+query {
+  user(id: "5dde9599b83ddb0e6cdb1554") {
+    id
+    dealer {
+      id
+      name
+    }
+    roleFeature {
+      id
+      name
+    }
+  }
+}
+
+mutation {
+  followingUser(target: "5ddb840c102789e5f1553ca9", status: FOLLOW) {
+    id
+    following {
+      target {
+        id
+        name
+      }
+      status
+      followAt
+    }
+  }
+}
+
+mutation {
+  createUser(
+    input: {
+      email: "jianyufen616@gmail.com"
+      phoneNumber: "+886928342401"
+      name: "jian"
+      roleFeature: "5dde9598b83ddb0e6cdb154f"
+      isEnabled: true
+      isDateabled: true
+    }
+  ) {
+    id
+    name
+    email
+    creator {
+      id
+      name
+    }
+  }
+}
+
+mutation {
+  updateUser(
+    id: "5dde9b2dc24e6f1180c462da"
+    input: {
+      roleFeature: "5dde9598b83ddb0e6cdb1553"
+      dealer: "5ddf2efe1bc1cb1c231fb170"
+    }
+  ) {
+    id
+    name
+    email
+    roleFeature {
+      id
+      name
+    }
+    dealer {
+      id
+      name
+    }
+  }
+}

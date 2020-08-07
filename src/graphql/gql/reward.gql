@@ -1,0 +1,20 @@
+mutation {
+  createReward(
+    input: {
+      type: COIN
+      reward: 100
+      requiredPrice: 1000
+      description: "滿一千送100點"
+    }
+  ) {
+    id
+    type
+    reward
+    requiredPrice
+    description
+    creator {
+      id
+      name
+    }
+  }
+}

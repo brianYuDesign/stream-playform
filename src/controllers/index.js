@@ -1,0 +1,5 @@
+export { default as authController } from "./authController"
+export { default as shareController } from "./shareController"
+export { default as orderController } from "./orderController"
+export { default as reportController } from "./reportController"
+export { default as storyController } from "./storyController"

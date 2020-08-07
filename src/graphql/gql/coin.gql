@@ -1,0 +1,12 @@
+mutation {
+  createCoin(input: { lang: TW, quantity: 1000, price: 10 }) {
+    id
+  }
+}
+
+query {
+  coins {
+    price
+    id
+  }
+}
